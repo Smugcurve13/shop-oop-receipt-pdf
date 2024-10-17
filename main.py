@@ -19,7 +19,8 @@ class Receipt:
         '''Generates a pdf receipt of what user bought'''
         name = df.loc[df['id']==user_choice,'name'].squeeze()
         price = df.loc[df['id']==user_choice,'price'].squeeze()
-        pdf_generate(name,price)
+        id = df.loc[df['id']==user_choice,'id'].squeeze()
+        pdf_generate(id,name,price)
         
 
 article = Article()

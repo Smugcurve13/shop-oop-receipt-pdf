@@ -1,0 +1,9 @@
+Show df of items
+ask user which article to buy using id
+user gets receipt of what he bought
+in_stock in df gets reduced by 1
+
+classes:
+Article:
+    
+Receipt
